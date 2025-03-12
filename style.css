@@ -1,0 +1,361 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+
+  font-family: 'Doto', sans-serif;
+  background-color: #111; 
+  color: #fff;
+  line-height: 1.6;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#toggle-mode-button {
+  position: fixed;
+  bottom: 20px; 
+  right: 15px; 
+  z-index: 1000; 
+  cursor: pointer; 
+
+  transition: transform 0.3s ease;
+}
+
+#toggle-mode-button svg {
+  display: block;
+  width: 40px;
+  height: 40px;
+  fill: #fbff00 !important;
+  transition: fill 0.3s ease;
+}
+
+#toggle-mode-button:hover {
+  transform: scale(1.1); 
+}
+
+#toggle-mode-button svg {
+  display: block;
+  width: 40px; 
+  height: 40px; 
+
+  transition: fill 0.3s ease; 
+}
+
+body.light-mode #toggle-mode-button svg {
+  fill: #0074d9 !important; 
+}
+
+a {
+  color: #fbff00; 
+  text-decoration: none;
+transition: color 0.3s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+.clean-header {
+  background-color: #222;
+  padding: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
+  border-bottom: 2px dashed #ffee00;
+transition: background-color 0.3s ease, border-color 0.3s ease;
+
+}
+.clean-header  b{
+  color: #ffee00; 
+transition: color 0.3s ease;
+  
+}
+.clean-header h1 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+  color: #ffee00;
+transition: color 0.3s ease;
+}
+
+.clean-header h2 {
+  font-size: 2.7rem;
+  margin-bottom: 10px;
+transition: color 0.3s ease;
+}
+
+.clean-header nav a {
+  margin: 0 10px;
+  font-size: 1.8rem;
+  color: #ffee00;
+transition: color 0.3s ease;
+}
+
+.clean-hero {
+  background: #111;
+  color: #fff;
+  padding: 100px 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.clean-hero h2 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+  color: #ffee00;
+transition: color 0.3s ease;
+}
+
+.clean-hero p {
+  font-size: 1.5rem;
+}
+
+
+.clean-section {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #222;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: 2px dashed #ffee00;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+ 
+}
+
+.clean-section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  color: #ffee00;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  transition: color 0.3s ease;
+}
+
+.clean-section p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.clean-section b {
+  color: #ffee00;
+  transition: color 0.3s ease;
+}
+
+
+.especiliadades {
+background-color: #111;
+padding: 40px 20px;
+text-align: center;
+transition: background-color 0.3s ease;
+}
+
+.interface {
+max-width: 1200px;
+margin: 0 auto;
+}
+
+.titulo {
+font-size: 2rem;
+margin-bottom: 30px;
+color: #fff;
+text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.titulo span {
+color: #ffcc00; 
+transition: color 0.3s ease;
+
+}
+
+.flex {
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+justify-content: center;
+}
+
+.especialidades-box {
+background-color: #222; 
+border: 2px dashed #ffcc00; 
+border-radius: 10px;
+padding: 20px;
+width: 150px;
+text-align: center;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+transition: transform 0.3s ease, box-shadow 0.3s ease, 
+background-color 0.3s ease, border-color 0.3s ease;
+  
+}
+
+.especialidades-box:hover {
+transform: translateY(-5px);
+box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+.especialidades-box svg {
+width: 50px;
+height: 50px;
+margin-bottom: 10px;
+fill: #ffcc00;
+transition: fill 0.3s ease;
+}
+
+.especialidades-box h3 {
+font-size: 1rem;
+margin-top: 10px;
+color: #fff;
+text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+transition: fill 0.3s ease;
+}
+
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  
+}
+
+.project-card.clean-card {
+  background-color: #333; 
+  border: 2px dashed #ffee00;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease,
+   background-color 0.3s ease, border-color 0.3s ease;
+  
+}
+
+.project-card.clean-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card.clean-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px dashed #ffee00;
+  transition: border-color 0.3s ease;
+}
+
+.project-card.clean-card h3 {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.project-card.clean-card p {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.project-card.clean-card a {
+  color: #ffee00;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+
+.clean-footer {
+  background-color: #222;
+  padding: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease;
+}
+
+
+
+
+/* Estilo para o modo claro */
+body.light-mode {
+  background-color: #fff;
+  color: #000; 
+}
+
+body.light-mode p {
+  color: #000;
+}
+
+body.light-mode .clean-header {
+  background-color: #f0f0f0; 
+  border-bottom: 2px dashed #0074d9; 
+}
+
+body.light-mode .clean-header b,
+body.light-mode .clean-header h1,
+body.light-mode .clean-header h2,
+body.light-mode .clean-header nav a {
+  color: #0074d9; 
+}
+
+body.light-mode a {
+  color: #0074d9; 
+}
+
+body.light-mode .clean-hero {
+  background: #fff; 
+  color: #000; 
+}
+
+body.light-mode .clean-hero h2 {
+  color: #0074d9; 
+}
+
+body.light-mode .clean-section {
+  background-color: #f0f0f0; 
+  border: 2px dashed #0074d9; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ ;
+}
+
+body.light-mode .clean-section p {
+  color: #000; 
+}
+
+body.light-mode .clean-section h2,
+body.light-mode .clean-section b {
+  color: #0074d9; 
+}
+
+body.light-mode .especiliadades {
+  background-color: #fff; 
+}
+
+body.light-mode .titulo span {
+  color: #0074d9; 
+}
+
+body.light-mode .especialidades-box {
+  background-color: #f0f0f0; 
+  border: 2px dashed #0074d9; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .especialidades-box svg {
+  fill: #0074d9;
+}
+
+body.light-mode .project-card.clean-card {
+  background-color: #f0f0f0;
+  border: 2px dashed #0074d9; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .project-card.clean-card img {
+  border: 2px dashed #0074d9; 
+}
+
+body.light-mode .project-card.clean-card a {
+  color: #010203; /
+}
+
+body.light-mode .clean-footer {
+  background-color: #f0f0f0; 
+}
